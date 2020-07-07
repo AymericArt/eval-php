@@ -1,0 +1,124 @@
+@import "./_main.scss";
+
+.container {
+
+}
+.container-calendar {
+  padding: 50px 1rem;
+  max-width: 1500px;
+  background-color: white;
+
+}
+
+.fc-time {
+  display: none;
+}
+
+.fc-day-grid-event {
+  background-color: $secondColor;
+  border: none;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-day-grid {
+  border-color: $secondColor;
+  background-color: white;
+}
+
+.fc-toolbar {
+  background-color: $secondColor;
+
+}
+
+.fc-day-header {
+  background-color: white;
+}
+
+.fc-content {
+  color: white;
+}
+
+.fc-right {
+  padding-right: 1rem;
+}
+
+.fc-left {
+  background-color: $secondColor;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0;
+}
+
+.fc-event-container {
+  padding-top: 10px !important;
+  height: 30px;
+}
+
+.fc-button-primary  {
+  background-color: $secondColor;
+  border-color: $secondColor;
+}
+
+.fc-button-primary:hover  {
+  background-color: $secondColor;
+  border-color: $secondColor;
+}
+.fc-button-primary:not(:disabled):active, .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: $secondColor;
+  border-color: $secondColor;
+}
+
+
+.price-container {
+  width: 100%;
+  background-color: $secondColor;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding: 30px 60px;
+    list-style-type: square;
+    font-size: 1.5rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.39);
+  }
+
+  .condition {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+
+  }
+  padding: 50px 0;
+}
+
+.container {
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  padding-bottom: 3rem;
+}
+
+p[data-f-id="pbf"] {
+  display: none !important;
+}
+
+
+.condition {
+  ul {
+    margin-bottom: 1rem;
+  }
+}

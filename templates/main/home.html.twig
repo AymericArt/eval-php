@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gite de la calquière{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/home.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container-image">
+        <div class="filtre-image typewriter">
+            <h1 class="bienvenu">{% trans %}Bienvenue au gîte de la Calquière{% endtrans %}</h1>
+
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="container-size">
+            <div class="">
+                <div class="second-container-carrousel">
+                    <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/image/gite/aveyron.jpg" alt="Paysage de l'aubrac">
+                                <div class="carousel-caption d-none d-md-block mt-2">
+                                    <p>L'aubrac</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/image/gite/aveyron3.webp" alt="Chateau de najac">
+                                <div class="carousel-caption d-none d-md-block mt-2">
+                                    <p>Le chateau de Najac</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/image/gite/aveyron2.jpg" alt="Abbey de conques">
+                                <div class="carousel-caption d-none d-md-block mt-2">
+                                    <p>L'abbey de Conques</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précedent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <h1>{% trans %}L'aveyron{% endtrans %}</h1>
+                <div>
+                    <p>
+                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                    </p>
+                    <p>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="third-container">
+        <div class="container-size">
+            <section>
+                <h1>{% trans %}Le village de St eulalie d'olt{% endtrans %}</h1>
+                <div>
+                    <p>
+                        {{ 'village' |trans }}
+                    </p>
+                </div>
+            </section>
+            <div>
+                <div class="third-container-carrousel">
+                    <div id="carroussel-village" data-interval="false" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/image/gite/village1.jpg" alt="village de st eulalie d'olt">
+                                <div class="carousel-caption d-none d-md-block mt-2">
+                                    <p>Le village</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/image/gite/village2.jpeg" alt="chateau de la galinière">
+                                <div class="carousel-caption d-none d-md-block mt-2">
+                                    <p>Le chateau de la Galinière</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carroussel-village" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précedent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carroussel-village" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

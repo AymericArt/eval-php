@@ -1,0 +1,5 @@
+require('../scss/cottage.scss');
+
+
+
+

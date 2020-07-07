@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/contact.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container d-flex justify-content-center col-12 p-0">
+        <div class="container-form">
+            <h1 class="text-center mb-2">{% trans %}Nous contacter{% endtrans %}</h1>
+            {{ form_start(contactForm) }}
+            {{ form_row(contactForm.name, {}) }}
+            {{ form_row(contactForm.email, {}) }}
+            {{ form_row(contactForm.content, {}) }}
+            {{ form_row(contactForm.hiddenInput, {'attr' : {'class': 'hidden'}}) }}
+            <div class="btn-container">
+                <button class="btn" id="btn-contact">{% trans %}Envoyer{% endtrans %}</button>
+            </div>
+            {{ form_end(contactForm) }}
+        </div>
+
+    </div>
+{% endblock %}

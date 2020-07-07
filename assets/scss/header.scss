@@ -1,0 +1,166 @@
+@import "./_main.scss";
+
+.main-nav-bar a {
+    color: white !important;
+}
+.first-nav, .second-nav {
+    background-color: $mainColor;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    color: #DDDDDD;
+}
+
+.first-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  .select-language {
+    grid-column: 4;
+  }
+
+  .form-group {
+    margin: 0;
+
+
+
+  }
+  .flag-french {
+    content: url("/image/flag/fr.svg");
+
+    width: 25px;
+  }
+
+  .flag-english {
+    content: url("/image/flag/uk.svg");
+    width: 25px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .select .btn-light {
+    margin-bottom: 0;
+    width: 75px;
+  }
+
+  .select .btn {
+    padding: 5px 10px 0 10px;
+  }
+
+}
+
+.second-nav {
+
+  border-top: 1px solid rgba(255, 255, 255, 0.49);
+  ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.5rem;
+
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+}
+
+.logo {
+  width: 240px;
+  grid-column: 1 / 3;
+  margin: 1rem;
+}
+
+.select-language {
+    width: 100px;
+    .language {
+
+    }
+}
+
+.flag-icon-fr {
+    content: url("/image/flag/fr.svg");
+}
+
+.container {
+  background:-webkit-repeating-linear-gradient(35deg, rgb(251, 251, 251) 7%, rgb(255, 255, 255) 10%);
+  background:-o-repeating-linear-gradient(35deg, rgb(251, 251, 251) 7%, rgb(255, 255, 255) 10%);
+  background:-moz-repeating-linear-gradient(35deg, rgb(251, 251, 251) 7%, rgb(255, 255, 255) 10%);
+  background:repeating-linear-gradient(35deg, rgb(251, 251, 251) 7%, rgb(255, 255, 255) 10%);
+}
+
+footer {
+  background-color: $mainColor;
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  color: white;
+
+  ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: white;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+
+
+}

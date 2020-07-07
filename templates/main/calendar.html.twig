@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/calendar.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="container d-flex justify-content-center col-12 p-0">
+        <div id='wrap' class="container-calendar">
+            <h1 class="text-center mb-4 pt-3">{% trans %}Calendrier{% endtrans %}</h1>
+            <div id='calendar'></div>
+
+            <div style='clear:both'></div>
+        </div>
+
+
+    </div>
+
+    <div class="price-container col-12">
+        <div class="condition">
+            {% for prix in price %}
+                <h2 class="text-center col-12 m-4">{{ prix.titlePrice|raw }}</h2>
+                {{ prix.content|raw }}
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script src="{{ asset('build/vendors~calendar.js') }}"></script>
+    <script src="{{ asset('build/vendors~calendar~chart.js') }}"></script>
+    <script src="{{ asset('build/calendar.js') }}"></script>
+
+
+{% endblock %}

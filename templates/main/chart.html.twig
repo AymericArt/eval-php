@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/chart.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+
+    <div id='wrap' class="container col-10">
+        <h1 class="text-center mb-4 pt-3">{% trans %}Votre semaines et charte père{% endtrans %}</h1>
+
+    </div>
+
+    <div class="container d-flex">
+        <div class="chart-container border m-2">
+            <h2 class="text-center">2019</h2>
+            <canvas class="condition" id="historique2019"></canvas>
+        </div>
+        <div class="chart-container border m-2">
+            <h2 class="text-center">2020</h2>
+            <canvas class="condition" id="historique2020"></canvas>
+        </div>
+    </div>
+
+    <div class="container" id="currentWeek">
+        <h2 class="text-center">Client de la semaine</h2>
+
+    </div>
+    <div id="chartdiv"></div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="{{ asset('build/chart.js') }}"></script>
+    <script src="{{ asset('build/vendors~calendar~chart.js') }}"></script>
+
+{% endblock %}

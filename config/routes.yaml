@@ -1,0 +1,33 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+home:
+  path:       /acceuil/{_locale}
+  controller: App\Controller\HomeController::home
+  requirements:
+    _locale: en|fr|de
+
+cottage:
+  path:       /gite/{_locale}
+  controller: App\Controller\CottageController::cottage
+  requirements:
+    _locale: en|fr|de
+
+calendar:
+  path:       /calendrier/{_locale}
+  controller: App\Controller\CalendarController::calendar
+  requirements:
+    _locale: en|fr|de
+
+contact:
+  path:       /contact/{_locale}
+  controller: App\Controller\ContactController::contact
+  requirements:
+    _locale: en|fr|de
+
+contactValidation:
+  path:       /contact-validation/{_locale}
+  controller: App\Controller\ContactValidationController::contactValidation
+  requirements:
+    _locale: en|fr|de

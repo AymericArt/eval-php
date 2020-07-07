@@ -1,0 +1,72 @@
+@import "./_main.scss";
+
+.container-form {
+  padding: 2rem;
+
+  border-right: 2px solid #c0c0c0;
+  border-left: 2px solid #c0c0c0;
+
+  background-color: white;
+
+  color: black;
+
+  width: 80%;
+  min-height: 95vh;
+
+}
+
+.container {
+}
+
+
+
+#contact_form_hiddenInput {
+  display: none;
+}
+
+[for="contact_form_hiddenInput"] {
+  display: none;
+}
+
+#contact_form_content {
+  min-height: 300px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+
+  button {
+    background-color: $secondColor;
+    color: white;
+    padding: 1rem 2rem;
+  }
+}
+
+#btn-contact {
+  transition: 150ms;
+  font-weight: bold;
+}
+
+#btn-contact:hover {
+  transform: scale(1.02);
+  transition: 150ms;
+}
+
+@media (max-width: 900px) {
+  .container-form {
+
+    border-right: 2px solid #c0c0c0;
+    border-left: 2px solid #c0c0c0;
+
+    width: 100%;
+  }
+}
+
+.validation {
+  padding: 3rem;
+  background-color: $secondColor;
+  border: 1px solid $secondColor;
+  color: white;
+  margin-top: 2rem;
+}

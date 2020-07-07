@@ -1,0 +1,88 @@
+@import "./_main.scss";
+
+.container-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+  padding-top: 30px;
+
+}
+
+.container-image {
+  width: 100%;
+
+  .container-1, .container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+
+  .div-image-hover {
+
+    h3 {
+      position: absolute;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.61);
+      color: white;
+      bottom: 0;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    transition: ease 100ms;
+    border: 0 solid rgba(0, 0, 0, 0.89);
+
+
+  }
+
+  .div-image-hover:hover {
+    box-sizing: border-box;
+    border:2px solid rgba(0, 0, 0, 0.89);
+    transition: ease 100ms;
+  }
+
+  .image-interieur {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .img-show {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+
+}
+
+.div-image-hover {
+  transition: 150ms;
+}
+
+
+
+@media (max-width: 800px) {
+  .container-image {
+
+    .container-1, .container-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+    }
+
+    .div-image-hover {
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+
+}
